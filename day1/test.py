@@ -3,8 +3,7 @@ from part1.result import part1
 
 
 def task1_example_test():
-    file = open("day1/input.txt", "r").read().splitlines()
-
+    file = open("day1/part1/example.txt", "r").read().splitlines()
     if part1(file) != 142:
         raise Exception("Test failed")
 
@@ -17,8 +16,7 @@ def task1_test():
 
 
 def task2_example_test():
-    file = open("day1/part1/example.txt", "r").read().splitlines()
-
+    file = open("day1/part2/example.txt", "r").read().splitlines()
     if part2(file) != 281:
         raise Exception("Test failed")
 
@@ -31,3 +29,6 @@ def task2_test():
 
 
 task1_test()
+task1_example_test()
+task2_test()
+task2_example_test()
